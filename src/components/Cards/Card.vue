@@ -107,6 +107,7 @@ export default {
   width: 100%
   grid-gap: 8px
   box-sizing: border-box
+  background-color: white
   padding: 18px 18px 18px 30px
   border-radius: 4px
   border: 1px solid #E6ECF2

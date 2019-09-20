@@ -170,19 +170,19 @@ export default {
   },
   mounted() {
     this.init()
-    this.initInterval()
+    this.initAutoupdateInterval()
   },
   beforeDestroy() {
-    clearInterval(this.initInterval)
+    clearInterval(this.initAutoupdateInterval)
   },
   methods: {
     init() {
-      this.updateRandomObject()
       this.calculateWidgetsData()
       this.sortObjects()
     },
-    initInterval() {
+    initAutoupdateInterval() {
       setInterval(() => {
+        this.updateRandomObject()
         this.init()
       }, this.random(5, 10) * 1000)
     },
