@@ -24,11 +24,11 @@ export default {
 
 <style lang="sass" scoped>
 .cards
-  display: grid
-  grid-gap: 1em
-  width: 100%
+    display: grid
+    grid-gap: 1em
+    width: 100%
 
 .flip-list-move 
-  transition: transform 1s
+    transition: transform 1s
 
 </style>
